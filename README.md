@@ -44,5 +44,9 @@ as set by the loop conditions. Now, assume that we have an randomly sorted list
 two adjacent elements in the array, they are either sorted or not. Then on 
 average, two elements need to be swaped about 1/2 of the time. This is important
 because the inner loop runs each time an element needs to be swaped. Since there are 
-n(n-1)/2 pairs of elements and half of these need to be swaped this means that 
-our average case runtime is equal to n + n(n-1)/4 which is equal to $\Theta(n^2)$.
+n(n-1)/2 pairs of elements in any given set of dataand half of these need to be 
+swaped this means that our average case runtime is equal to n + (1/2)n(n-1)/2 
+which is equal to $\Theta(n^2)$.
+
+This post helped me understand the proof really well:
+https://stackoverflow.com/questions/17055341/why-is-insertion-sort-%CE%98n2-in-the-average-case
