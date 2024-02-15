@@ -37,3 +37,10 @@ constant factors.
 Describe your reasoning and the conclusion you've come to. Your reasoning is
 most important -- you can easily find the answer, but you need to demonstrate
 that you've understood the concept. Add your answer to this markdown file.
+
+The average case of insertion sort is n^2. Assume that we have an randomly 
+sorted list (that is each element is placed into an array randomly). This
+means that for any two adjacent elements in the array, they are either sorted
+or not. Then on average, two elements need to be swaped about 1/2
+of the time. Each time we swap a pair of unsorted elements, this takes 1 iteration
+of the inner loop. So, the average case runtime is now equal to n(n-1)/4 = $\Theta(n^2)$.
