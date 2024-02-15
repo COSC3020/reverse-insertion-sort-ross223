@@ -48,5 +48,5 @@ n(n-1)/2 pairs of elements in any given set of dataand half of these need to be
 swaped this means that our average case runtime is equal to n + (1/2)n(n-1)/2 
 which is equal to $\Theta(n^2)$.
 
-This post helped me understand the proof really well:
+This post helped me understand the reasoning really well:
 https://stackoverflow.com/questions/17055341/why-is-insertion-sort-%CE%98n2-in-the-average-case
