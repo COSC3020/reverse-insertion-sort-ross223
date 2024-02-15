@@ -38,9 +38,11 @@ Describe your reasoning and the conclusion you've come to. Your reasoning is
 most important -- you can easily find the answer, but you need to demonstrate
 that you've understood the concept. Add your answer to this markdown file.
 
-The average case of insertion sort is n^2. Assume that we have an randomly 
-sorted list (that is each element is placed into an array randomly). This
-means that for any two adjacent elements in the array, they are either sorted
-or not. Then on average, two elements need to be swaped about 1/2
-of the time. Each time we swap a pair of unsorted elements, this takes 1 iteration
-of the inner loop. So, the average case runtime is now equal to n(n-1)/4 = $\Theta(n^2)$.
+The average case of insertion sort is n^2. The outer loop always runs n times 
+as set by the loop conditions. Now, assume that we have an randomly sorted list 
+(that is each element is placed into an array randomly). This means that for any 
+two adjacent elements in the array, they are either sorted or not. Then on 
+average, two elements need to be swaped about 1/2 of the time. This is important
+because the inner loop runs each time an element needs to be swaped. Since there are 
+n(n-1)/2 pairs of elements and half of these need to be swaped this means that 
+our average case runtime is equal to n + n(n-1)/4 which is equal to $\Theta(n^2)$.
